@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react'
 import './App.css'
-import { RayvinClient, RayvinFeed } from 'rayvin-connect'
-import { MomentListedData } from 'rayvin-connect/lib/lib/feed/messages/moment-listed-message'
-import moment from 'moment';
-import { momentUrl } from 'rayvin-connect/lib/lib/helpers/top-shot-helpers'
+import moment from 'moment'
+import { MomentListedData } from '@rayvin-connect/rayvin-connect/lib/lib/feed/messages/moment-listed-message'
+import { RayvinClient, RayvinFeed } from '@rayvin-connect/rayvin-connect'
+import { momentUrl } from '@rayvin-connect/rayvin-connect/lib/lib/helpers/top-shot-helpers'
 
 function App () {
   const [apiKey, setApiKey] = useState(undefined as string | undefined)
